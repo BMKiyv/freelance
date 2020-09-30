@@ -1,14 +1,18 @@
 import React from 'react';
+import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const [work, setWork] = useState('good');
+  const onClick = setWork({work:"bad"});
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+            We will create DForce app
+          <button onClick = {onClick}>{work}</button> and save to reload.
         </p>
         <a
           className="App-link"
