@@ -13,9 +13,13 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
             We will create DForce app
-           and save to reload.
+           and will do that:
         </p>
-        <button onClick = {()=>setWork(work=>work==='good'?'bad':'good')} >{work}</button>
+        <button
+         onClick = {()=>setWork(work=>work==='good'?'bad':'good')}
+         style = {{height:'50px',width:'80px',background:'green'}} >
+           {work}
+        </button>
         {/* <a
           className="App-link"
           href="https://reactjs.org"
