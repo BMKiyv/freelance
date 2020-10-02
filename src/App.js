@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Hoisting from './Hoisting/Hoisting';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           Learn React
         </a> */}
       </header>
+      <Hoisting />
     </div>
   );
 }
